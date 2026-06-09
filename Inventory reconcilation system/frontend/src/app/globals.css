@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFFFF;
+  --page-bg: #F8FAFC;
+  --card: #FFFFFF;
+  --border: #E2E8F0;
+  --primary: #10B981;
+  --secondary: #2563EB;
+  --text: #0F172A;
+  --muted: #64748B;
+  
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-page-bg: var(--page-bg);
+  --color-card: var(--card);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --font-sans: 'Inter', 'Outfit', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+}
+
+/* Base Body settings matching the clean Stripe-like enterprise feel */
+body {
+  background-color: var(--page-bg);
+  color: var(--text);
+  font-family: 'Inter', 'Outfit', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar for sleek UI feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--page-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
